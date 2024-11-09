@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Securerch App: Ingreso</title>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/styles/styles.css">
+    </head>
+
+    <body>
+        <div class="sesion-usuario">
+            <form action="" method="get" name="formInicio" id="formRegistro">
+                <h1>Ingresa a tu cuenta de Securerch</h1>
+
+                <div class="form-inputs">
+                    <input type="email" name="correo" onfocus="this.select()" placeholder="Correo" id="correo" required>
+                </div>
+                <div class="form-inputs">
+                    <input type="password" name="password" onfocus="this.select()" placeholder="Contraseña" id="password" required>
+                </div>
+            </form>
+
+            <div class="form-inputs">
+                <button class="boton-verde boton-sesion-usuario" id="submit" onclick="ingresoUsuario()">Ingresar</button>
+            </div>
+
+            <p class="texto-espaciado"><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <p id="registrar" class="texto-espaciado">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+            <p class="texto-espaciado"><a href="index.html">Regresar</a></p>
+        </div>
+        <script type="text/javascript" src="assets/scripts/scripts.js"></script>
+    </body>
+</html>
