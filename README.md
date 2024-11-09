@@ -9,3 +9,12 @@ Características principales
 
 Mapa interactivo para ver las zonas peligrosas.
 Visualización y creación de comentarios sobre una zona.
+Información de las zonas peligrosas (Hora y nivel de peligro)
+
+Autores:
+
+* Avilés Sánchez, Christian Eduardo
+* Carril D'arrigo, Renzo
+* Huaman Sotomayor, Pedro Mauricio
+* Pintado Ninapayta, Gianfranco
+* Torpoco Melgarejo, Tiago Rodrigo
