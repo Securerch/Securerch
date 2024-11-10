@@ -30,7 +30,7 @@
     <body id="index">
         <header id="header-fijo">
             <div class="logo-nav-container" id="div-header">
-                <a href="#Inicio"><img src="assets/images/logo.png" alt="logo" width="100" height="100"></a>
+                <a href="#Inicio"><img src="assets/images/logo.png" alt="logo" class="logo-link" width="100" height="100"></a>
                 <nav class="navigation">
                     <ul>
                         <li><button class="boton-azul"><a href="#Nosotros">Nosotros</a></button></li>
@@ -42,7 +42,7 @@
         </header>
 
         <main>
-            <div class="seccion" id="Inicio">
+            <div class="seccion-inicio" id="Inicio">
                 <div class="contenedor-inicio">
                     <div>
                         <h1>Mantente seguro<br>Cuídate del peligro<br>Informa a los demás</h1>
@@ -53,15 +53,17 @@
                         </p>
                         <button class="boton-verde"><a href="registro.html" class="header-link">Unirse</a></button>
                     </div>
-                    <img src="assets/images/surco.jpg" alt="Surco" width="732" height="100%">
+                    <div class="home-img-container">
+                        <img src="assets/images/surco.jpg" alt="Surco">
+                    </div>
                 </div>
             </div>
 
-            <div id="Nosotros">
+            <div id="Nosotros" class="">
                 <h1>Nosotros</h1>
 
-                <div class="div-nosotros">
-                    <div>
+                <div class="nosotros-section-container">
+                    <div class="nosotros-text-container">
                         <h2>¿Quienes somos?</h2>
                         <p>
                             Nuestro equipo conformado por estudiantes de la Universidad Peruana de Ciencias Aplicadas
@@ -71,7 +73,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="nosotros-text-container">
                         <h2>Misión</h2>
                         <p>
                             Ofrecer una mayor seguridad e información a todas las personas que no tengan mucho conocimiento
@@ -80,7 +82,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="nosotros-text-container">
                         <h2>Visión</h2>
                         <p>
                             Consolidarnos como una aplicación confiable y segura para los usuarios. Aspirando a poder extendernos en
@@ -90,12 +92,12 @@
                 </div>
 
                 <div class="div-centro">
-                    <button id="ver-mas" onclick="mostrarOcultarIntegrantes()">Ver Más</button>
+                    <button id="ver-mas" class="boton-verde" onclick="mostrarOcultarIntegrantes()">Ver Más</button>
                 </div>
 
                 <div hidden="true" id="integrantes-grupo">
-                    <div class="div-nosotros">
-                        <div>
+                    <div class="nosotros-section-container">
+                        <div class="nosotros-text-container">
                             <h5>Christian Avilés</h5>
                             <p class="p-normal">
                                 Soy un estudiante de Ingeniería de Sistemas de Información
@@ -103,7 +105,7 @@
                                 conocimiento básico de varios lenguajes de programación, teniendo más experiencia con C#.
                             </p>
                         </div>
-                        <div>
+                        <div class="nosotros-text-container">
                             <h5>Renzo Carril</h5>
                             <p class="p-normal">
                                 Soy estudiante de la carrera de ingeniería de software ya que me gusta la tecnología desde muy chico
@@ -111,7 +113,7 @@
                                 convenios con distintas universidades y por que es una de las que mejor ámbito laboral tiene en el país.
                             </p>
                         </div>
-                        <div>
+                        <div class="nosotros-text-container">
                             <h5>Pedro Huaman</h5>
                             <p class="p-normal">
                                 Estudiante de la carrera de Ingeniería de Sistemas de la Información en la UPC.
@@ -122,8 +124,8 @@
                         </div>
                     </div>
 
-                    <div class="div-nosotros">
-                        <div>
+                    <div class="nosotros-section-container">
+                        <div class="nosotros-text-container">
                             <h5>Gianfranco Pintado</h5>
                             <p class="p-normal">
                                 Estudiante de Ingeniería de Sistemas de Información, me destaco por la habilidad para resolver
@@ -131,7 +133,7 @@
                                 la calidad es una garantía para resultados confiables.
                             </p>
                         </div>
-                        <div>
+                        <div class="nosotros-text-container">
                             <h5>Tiago Torpoco</h5>
                             <p class="p-normal">
                                 Estudiante de Ingeniería de Sistemas, me gustan los deportes como el fútbol y el
@@ -146,21 +148,25 @@
 
             </div>
 
-            <div id="Comunidad">
-                <div class="seccion-comentarios">
+            <div id="Comunidad" class="seccion">
+                <h2>Comunidad</h2>
+                <div class="comunidad-section-container">
 
-                    <div>
+                    <div class="comunidad-text-container verde">
                         <h2>Zona A</h2>
-                        <p class="p-normal">
-                            ULTIMO COMENTARIO:
+                        <p class="p-centrado-small">
+                            <strong>ULTIMO COMENTARIO:</strong>
                             <br>
                             Jose Carlos Arriaga
                             <br>
                             hola, cuando esta caminando observe que a una señora le estaba siguiendo alguien sospechoso......
                         </p>
+                    </div>
+
+                    <div class="comunidad-text-container azul">
                         <h2>Zona B</h2>
-                        <p class="p-normal">
-                            ULTIMO COMENTARIO:
+                        <p class="p-centrado-small">
+                            <strong>ULTIMO COMENTARIO:</strong>
                             <br>
                             Ana Torres
                             <br>
@@ -169,19 +175,22 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="comunidad-text-container verde">
                         <h2>Zona C</h2>
-                        <p class="p-normal">
-                            ULTIMO COMENTARIO:
+                        <p class="p-centrado-small">
+                            <strong>ULTIMO COMENTARIO:</strong>
                             <br>
                             María González
                             <br>
                             Siempre me ha dado un poco de miedo pasar por esa calle. He escuchado muchas historias de
                             robos en la zona, así que trato de evitarla por la noche.
                         </p>
+                    </div>
+
+                    <div class="comunidad-text-container azul">
                         <h2>Zona D</h2>
-                        <p class="p-normal">
-                            ULTIMO COMENTARIO:
+                        <p class="p-centrado-small">
+                            <strong>ULTIMO COMENTARIO:</strong>
                             <br>
                             Carlos Méndez
                             <br>
@@ -190,19 +199,22 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="comunidad-text-container verde">
                         <h2>Zona E</h2>
-                        <p class="p-normal">
-                            ULTIMO COMENTARIO:
+                        <p class="p-centrado-small">
+                            <strong>ULTIMO COMENTARIO:</strong>
                             <br>
                             Javier López
                             <br>
                             La zona del parque se ve bastante descuidada. He notado que hay personas que parecen no
                             tener buenas intenciones, especialmente después del anochecer.
                         </p>
+                    </div>
+
+                    <div class="comunidad-text-container azul">
                         <h2>Zona F</h2>
-                        <p class="p-normal">
-                            ULTIMO COMENTARIO:
+                        <p class="p-centrado-small">
+                            <strong>ULTIMO COMENTARIO:</strong>
                             <br>
                             Lucía Pérez
                             <br>
@@ -213,19 +225,26 @@
 
                 </div>
 
-                <div id="div-comunidad-boton">
-                    <button class="boton-verde boton-comunidad">Ver todo</button>
+                <div class="div-comunidad-boton">
+                    <button class="boton-verde">Ver todo</button>
                 </div>
             </div>
 
-            <div id="Servicios">
+            <div id="Servicios" class="seccion">
                 <h1>Servicios</h1>
-                <div id="contenedorMapa">
-                    <div id="map"></div>
-                    <div id="controlMapa">
-                        <input type="text" id="lugarInicio" placeholder="Ingrese su dirección actual">
-                        <input type="text" id="lugarDestino" placeholder="Ingrese su destino">
-                        <button id="btnDestino" class="boton-verde" onclick="irADestino()">Ver ruta</button>
+                <div id="contenedorMapa" class="contenedor-mapa">
+                    <div id="map" class="map"></div>
+                    <div id="controlMapa" class="control-mapa">
+                        <p class="titulo-mapa nunito-sans">Control del mapa</p>
+                        <label class="label-mapa">
+                            Origen
+                            <input type="text" id="lugarInicio" class="input-mapa" />
+                        </label>
+                        <label class="label-mapa">
+                            Destino
+                            <input type="text" id="lugarDestino" class="input-mapa" />
+                        </label>
+                        <button id="btnDestino" class="boton-mapa" onclick="irADestino()">Ver ruta</button>
                     </div>
                 </div>
             </div>

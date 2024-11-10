@@ -85,7 +85,8 @@ function obtenerElementoAUsar() {
         const [key, value] = pair.split('=');
         params[key] = decodeURIComponent(value);
     });
-    if (Object.keys(params).length === 0 || Object.keys(params) === '') {
+    if (Object.keys(params).indexOf("?user") === -1) {
+
         boton.className = "boton-verde";
 
         var anchor = document.createElement("a");
