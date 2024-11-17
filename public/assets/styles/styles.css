@@ -364,37 +364,88 @@ a {
 
 /* Forms */
 
+.seccion-login {
+    background-image: url(../images/fondo-login.jpeg);
+    background-size: cover;
+    height: 100vh;
+    opacity: 75%;
+}
+
 .sesion-usuario {
-    display: block;
-    align-items: center;
-    background-color: white;
-    border-radius: 50px;
-    width: 40%;
-    margin: 4% 30%;
+    width: 25vw;
+    background: linear-gradient(#999, #ddd);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 0 #333;
 }
 
-.sesion-usuario form {
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sesion-usuario form h1 {
-    margin: 0 10px 10px 10px;
-    padding-top: 20px;
-}
-
-.form-inputs{
+.link-regresar {
+    height: 100px;
+    width: 100px;
+    background-color: #aaa;
+    justify-self: first baseline;
+    margin-left: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     display: flex;
-    justify-content: space-around;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px 0 #333;
 }
 
-.form-inputs input{
-    font-size: 20px;
-    width: 300px;
+.link-regresar img {
+    width: 80px;
+    transition: all 0.5s;
 }
+
+.link-regresar img:hover {
+    transform: scale(0.9);
+}
+
+.form-login h2 {
+    text-align: center;
+}
+
+.label-login {
+    margin: 20px 5px;
+    font-weight: bold;
+}
+
+.label-login input {
+    margin: 0 5px 10px 0;
+    width: 95%;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.label-login input:focus {
+    transform: scale(1.02);
+}
+
+.boton-login {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-login button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #4734f6;
+    transition: all 0.4s;
+}
+
+.boton-login button:hover {
+    transform: scale(0.9);
+}
+
 
 .sesion-usuario p {
     text-align: center;
@@ -405,4 +456,21 @@ a {
 .texto-espaciado {
     text-align: center;
     padding-bottom: 15px;
+}
+
+.link-form {
+    display: flex;
+    justify-content: center;
+}
+
+.link-form a {
+    color: #2cb15f;
+}
+
+.link-form a:visited {
+    color: #2cb15f;
+}
+
+.link-form a:hover {
+    color: #2cb15fb9;
 }

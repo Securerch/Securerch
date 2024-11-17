@@ -16,28 +16,37 @@
     </head>
 
     <body>
-        <div class="sesion-usuario">
-            <form action="" method="get" name="formInicio" id="formRegistro">
-                <h1>Crea tu cuenta de Securerch</h1>
-
-                <div class="form-inputs">
-                    <input type="email" name="correo" onfocus="this.select()" placeholder="Correo" id="correo" required>
-                </div>
-                <div class="form-inputs">
-                    <input type="password" name="password" onfocus="this.select()" placeholder="Contraseña" required>
-                </div>
-                <div class="form-inputs">
-                    <input type="password" name="validarPassword" onfocus="this.select()" placeholder="Confirmar contraseña" required>
-                </div>
-            </form>
-
-            <div class="form-inputs">
-                <button class="boton-verde boton-sesion-usuario" id="submit" onclick="registroUsuario()">Ingresar</button>
-            </div>
-
-            <p id="registrar" class="texto-espaciado"><a href="ingreso.html">Iniciar sesión</a></p>
-            <p class="texto-espaciado"><a href="index.html">Regresar</a></p>
+    <div class="seccion-login">
+        <div class="link-regresar">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo"/></a>
         </div>
+        <div class="div-centro">
+            <div class="sesion-usuario">
+                <form action="" method="get" class="form-login" id="formRegistro">
+                    <h2>Crea tu cuenta de Securerch</h2>
+                    <label class="label-login">
+                        Email
+                        <input type="email" name="correo" onfocus="this.select()" id="correo" required/>
+                    </label>
+                    <label class="label-login">
+                        Contraseña
+                        <input type="password" name="password" onfocus="this.select()" id="password" required/>
+                    </label>
+                    <label class="label-login">
+                        Confirmar Contraseña
+                        <input type="password" name="validarPassword" onfocus="this.select()" id="validarPassword" required/>
+                    </label>
+                </form>
+
+                <div class="boton-login">
+                    <button id="submit" onclick="registroUsuario()">Registrar</button>
+                </div>
+                <div class="link-form">
+                    <p><a href="ingreso.html">Iniciar sesión</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
         <script type="text/javascript" src="assets/scripts/scripts.js"></script>
     </body>
 </html>
