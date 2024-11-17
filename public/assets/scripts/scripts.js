@@ -1,17 +1,17 @@
-function validarFormIngreso(forma){
-    var usuario = forma.usuario;
-    if(correo.value === "") {
+function validarFormIngreso(){
+    let correoAct = document.getElementById("correo");
+    let passwordAct = document.getElementById("password");
+    if(correoAct.value === "") {
         alert("Debe de proporcionar un email");
-        usuario.focus();
-        usuario.select();
+        correoAct.focus();
+        correoAct.select();
         return false;
     }
 
-    var password = forma.password;
-    if(password.value === "" || password.value.length < 8) {
+    if(passwordAct.value.length < 8) {
         alert("Debe de proporcionar una contraseña de al menos de 8 caracteres");
-        password.focus();
-        password.select();
+        passwordAct.focus();
+        passwordAct.select();
         return false;
     }
 
@@ -20,8 +20,7 @@ function validarFormIngreso(forma){
 }
 
 function ingresoUsuario() {
-    var form = document.getElementById("formRegistro");
-    if (validarFormIngreso(form)) {
+    if (validarFormIngreso()) {
         fetch("assets/scripts/usuarios.json")
             .then(response => response.json())
             .then(value => {
@@ -47,17 +46,17 @@ function ingresoUsuario() {
     }
 }
 
-function validarFormRegistro(forma){
-    const password = forma.password;
-    const confirmarPassword = forma.validarPassword;
+function validarFormRegistro(){
+    let passwordAct = document.getElementById("password");
+    const confirmarPasswordAct = document.getElementById("validarPassword");
 
-    if (!validarFormIngreso(forma))
+    if (!validarFormIngreso())
         return false;
 
-    if(confirmarPassword.value === "" || confirmarPassword.value !== password.value) {
+    if(confirmarPasswordAct.value === "" || confirmarPasswordAct.value !== passwordAct.value) {
         alert("Su contraseña debe de coincidir");
-        confirmarPassword.focus();
-        confirmarPassword.select();
+        confirmarPasswordAct.focus();
+        confirmarPasswordAct.select();
         return false;
     }
 
@@ -65,8 +64,7 @@ function validarFormRegistro(forma){
 }
 
 function registroUsuario() {
-    const form = document.getElementById("formRegistro");
-    if (validarFormRegistro(form)) {
+    if (validarFormRegistro()) {
         alert("Se registró correctamente");
         let correoAct = document.getElementById("correo").value;
         let anchor = document.createElement("a");
